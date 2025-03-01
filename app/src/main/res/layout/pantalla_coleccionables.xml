@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.Guide"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <!-- Bocadillo de Personajes -->
+    <RelativeLayout
+        android:id="@+id/bocadilloPersonajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bocadillo_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Texto del bocadillo  -->
+        <TextView
+            android:id="@+id/bocadillo"
+            style="@style/Bocadillo"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/guia_coleccionables" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/marcadorTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/marcador_tabs"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    style="@style/AppTheme.Guide"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+
+
+<!--    &lt;!&ndash; Bocadillo de Personajes &ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/bocadilloPersonajes"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/bocadillo_fondo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        >-->
+
+<!--        &lt;!&ndash; Texto del bocadillo  &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/bocadillo"-->
+<!--            style="@style/Bocadillo"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:text="@string/guia_coleccionables" />-->
+<!--    </RelativeLayout>-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

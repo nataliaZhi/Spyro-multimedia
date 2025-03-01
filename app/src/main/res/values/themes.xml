@@ -5,9 +5,21 @@
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:statusBarColor">?attr/colorPrimary</item>
         <item name="android:windowBackground">@drawable/background</item>
-
         <item name="android:windowSplashScreenBackground">@color/purple</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash</item>
 
     </style>
-</resources>
+
+
+        <!-- Tema base sin ActionBar -->
+        <style name="AppTheme.Guide" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <!-- Color del texto -->
+            <item name="android:textColor">#FFFFFF</item>
+            <!-- Tamaño del texto -->
+            <item name="android:textSize">14sp</item>
+
+            <item name="colorPrimary">@color/yellow</item>
+            <item name="colorOnPrimary">@color/orange</item>
+        </style>
+
+    </resources>

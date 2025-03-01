@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_bienvenido"
+    android:clickable="true"
+    android:focusable="true"
+    android:theme="@style/AppTheme.Guide"
+
+    >
+
+    <!-- Texto de bienvenida -->
+    <TextView
+        android:id="@+id/txtBienvenido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenido_guia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Title"/>
+
+
+    <!-- Texto de bienvenida 1 -->
+    <TextView
+        android:id="@+id/txtBienvenido1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenido_guia1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBienvenido"
+        style="@style/Body"/>
+
+    <!-- Imagen de Spyro -->
+    <ImageView
+        android:id="@+id/imgSpyro"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/imagen_de_spyro"
+        android:src="@drawable/spyro_letras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBienvenido1" />
+
+
+
+    <!--- Botón comenzar -->
+
+    <Button
+        android:id="@+id/btnHuevo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:textColor="@color/black"
+        android:text="@string/comenzar"
+        android:background="@drawable/dragon_eggs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBienvenido1"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

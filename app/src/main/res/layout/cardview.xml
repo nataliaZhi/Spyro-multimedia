@@ -24,6 +24,15 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/spyro"
             android:scaleType="centerCrop"/>
+        <!-- Incluir la animación de fuego -->
+
+        <include
+            android:id="@+id/includeFireAnimation"
+            layout="@layout/fire_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"/>
 
         <!-- Nombre del personaje -->
         <TextView
@@ -36,4 +45,5 @@
             android:textSize="18sp" />
 
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

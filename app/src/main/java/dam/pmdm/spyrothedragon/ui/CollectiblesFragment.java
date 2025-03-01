@@ -29,6 +29,8 @@ public class CollectiblesFragment extends Fragment {
     private CollectiblesAdapter adapter;
     private List<Collectible> collectiblesList;
 
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 

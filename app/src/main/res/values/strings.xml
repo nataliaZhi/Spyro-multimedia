@@ -4,6 +4,36 @@
     <string name="characters">Personajes</string>
     <string name="collectibles">Coleccionables</string>
     <string name="title_about">Acerca de</string>
-    <string name="text_about">Aplicación desarrollada por \n <b>Lindsay Barrero Martínez.</b></string>
+    <string name="text_about">Aplicación desarrollada por \n <b>Zhilyakova Natalia.</b></string>
     <string name="accept">Aceptar</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="omitir">Omitir</string>
+    <string name="bienvenido_guia">BIENVENIDO</string>
+    <string name="bienvenido_guia1">Preparate para explorar el mundo magico de esta aplicación inspirada en </string>
+    <string name="bienvenido_guia2">Aquí aprenderás a navegar por pestañas llenas de dragones, mundos fascinantes y mopntones de tesoros brillantes. \n\nPulsa /"Comenzar/" y deja que Spyro te lleve volando a través de esta quía interactiva.  </string>
+    <string name="imagen_de_spyro">Imagen de Spyro</string>
+    <string name="saltar_guia">Saltar guia</string>
+    <string name="guia_personaje">Aquí podrás explorar a todos los personajes del mundo de Spyro.</string>
+    <string name="bloqueador_de_pantalla">Bloqueador de pantalla</string>
+    <string name="flecha">Flecha</string>
+    <string name="guia_mundos">¡Explora los mundos disponibles! Aquí encontrarás diferentes entornos y desafíos para disfrutar.</string>
+    <string name="guia">Guía</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="personajes_guide">Personajes</string>
+    <string name="mundo_guide">Mundos</string>
+    <string name="coleccionables_guide">Coleccionables</string>
+    <string name="icono_guide">Iconos</string>
+    <string name="resumen_guia">Resumen</string>
+    <string name="txt_guia_icono">Haz clic aquí para obtener más información sobre la aplicación.</string>
+    <string name="guia_coleccionables">Descubre todos los coleccionables en el mundo de Spyro.</string>
+    <string name="paso1">Paso 1: Bienvenida</string>
+    <string name="paso2">Paso 2: Personajes</string>
+    <string name="paso3">Paso 3: Mundos</string>
+    <string name="paso4">Paso 4: Coleccionables</string>
+    <string name="paso5">Paso 5: Icono de Información</string>
+    <string name="descripcion_icono_info">Icono info</string>
+    <string name="descripcion_imagen">Imagen Gemas</string>
+
+
 </resources>
