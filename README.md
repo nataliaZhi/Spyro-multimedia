@@ -57,11 +57,13 @@ En general, este proyecto me permitió explorar una amplia gama de tecnologías 
 
 
 ## Capturas de pantalla
-![image]
-![image](https://github.com/user-attachments/assets/)
-![image](https://github.com/user-attachments/assets/)
-![image](https://github.com/user-attachments/assets/)
-![image](https://github.com/user-attachments/assets/)
+![image](https://github.com/nataliaZhi/Spyro-multimedia/blob/master/pantallas/Spyro1.png)
+![image](https://github.com/nataliaZhi/Spyro-multimedia/blob/master/pantallas/Spyro2.png)
+![image](https://github.com/nataliaZhi/Spyro-multimedia/blob/master/pantallas/Spyro3.png)
+![image](https://github.com/nataliaZhi/Spyro-multimedia/blob/master/pantallas/Spyro4.png)
+![image](https://github.com/nataliaZhi/Spyro-multimedia/blob/master/pantallas/Spyro5.png)
+![image](https://github.com/nataliaZhi/Spyro-multimedia/blob/master/pantallas/Spyro6.png)
 
 # Video demostración:
 Se puede ver una demostración del funcionamiento en el siguiente enlace:
+https://www.youtube.com/shorts/uKgQfEJo8Z0
