@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import dam.pmdm.spyrothedragon.MainActivity;
 import dam.pmdm.spyrothedragon.R;
 import dam.pmdm.spyrothedragon.databinding.FragmentVideoBinding;
 
@@ -21,10 +22,14 @@ public class VideoFragment extends Fragment {
         // Inflar el layout usando View Binding
         binding = FragmentVideoBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
+        // Ocultar el Toolbar al iniciar el fragmento
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).ocultarToolbar();
+        }
 
 
         // Cargar el vídeo desde recursos raw
-        Uri videoUri = Uri.parse("android.resource://" + requireContext().getPackageName() + "/" + R.raw.gema);
+        Uri videoUri = Uri.parse("android.resource://" + requireContext().getPackageName() + "/" + R.raw.video_consejo);
 
         // Configurar el VideoView usando View Binding
         binding.videoView.setVideoURI(videoUri); // Establecer la ruta del vídeo
@@ -44,6 +49,11 @@ public class VideoFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null; // Limpiar la referencia de View Binding
+        binding = null;
+
+        // Mostrar el Toolbar si el fragmento se destruye
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).mostrarToolbar();
+        }
     }
 }

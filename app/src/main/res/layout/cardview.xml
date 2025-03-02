@@ -5,35 +5,38 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:elevation="0dp"
-    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/yellow2"
     app:cardCornerRadius="30dp"
-    app:cardBackgroundColor="@color/yellow2">
+    app:cardElevation="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00000000"
         android:orientation="horizontal"
-        android:padding="5dp"
-        android:background="#00000000">
-
-        <!-- Imagen del personaje -->
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/spyro"
-            android:scaleType="centerCrop"/>
-        <!-- Incluir la animación de fuego -->
-
-        <include
-            android:id="@+id/includeFireAnimation"
-            layout="@layout/fire_animation"
+        android:padding="5dp">
+        <!-- FrameLayout para superponer el ImageView y el include -->
+        <FrameLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:visibility="gone"/>
+            android:layout_height="wrap_content">
+            <!-- Imagen del personaje -->
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/spyro" />
+            <!-- Incluir la animación de fuego -->
 
+            <include
+                android:id="@+id/includeFireAnimation"
+                layout="@layout/fire_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+        </FrameLayout>
         <!-- Nombre del personaje -->
         <TextView
             android:id="@+id/name"

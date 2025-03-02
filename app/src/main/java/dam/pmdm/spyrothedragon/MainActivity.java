@@ -3,7 +3,6 @@ package dam.pmdm.spyrothedragon;
 
 
 import android.media.MediaPlayer;
-import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -11,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -67,18 +67,18 @@ public class MainActivity extends AppCompatActivity {
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             }
         });
-
+        prefsHelper.setGuideShown(false);
        //   Verificar si la guía ya se mostró
-      //  if (!prefsHelper.isGuideShown()) {
-            // Mostrar la guía si no se ha mostrado antes
+        if (!prefsHelper.isGuideShown()) {
+          //   Mostrar la guía si no se ha mostrado antes
 
 
         mostrarGuia ();
 
 
             // Marcar que la guía ya se mostró
-            //prefsHelper.setGuideShown(true);
-      //  }
+            prefsHelper.setGuideShown(true);
+     }
     }
 
     // Método para mostrar la guía
@@ -128,10 +128,21 @@ if (pantallaActual==1|| pantallaActual==6) {
                 navController.navigate(R.id.action_worlds_to_collectibles);
                 break;
             case 5:
+            // Obtener referencia al ImageView (iconoInfo)
+                ImageView iconoInfo = findViewById(R.id.iconoInfo);
 
-                showInfoDialog();
+                // Agregar el OnClickListener al iconoInfo
+                iconoInfo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        // Mostrar el diálogo
+                        showInfoDialog();
+                    }
+                });
 
                 break;
+
+
         }
 
         //  Configurar los botones de la pantalla actual
@@ -199,7 +210,7 @@ if (pantallaActual==1|| pantallaActual==6) {
         View pantalla = binding.includeLayout.contenidoGuia.getChildAt(0);
 
         // Configurar el botón "Siguiente"
-        View botonSiguiente = pantalla.findViewById(R.id.btnSiguiente);
+        View botonSiguiente =pantalla.findViewById(R.id.btnSiguiente);
         if (botonSiguiente != null) {
             botonSiguiente.setOnClickListener(v -> avanzarPantalla(pantallaActual + 1));
 
@@ -251,7 +262,7 @@ if (pantallaActual==1|| pantallaActual==6) {
 
     private void cerrarGuia() {
         binding.includeLayout.includeGuia.setVisibility(View.GONE); // Ocultar la guía
-        prefsHelper.setGuideShown(true); // Marcar que la guía ya se mostró
+       // prefsHelper.setGuideShown(true); // Marcar que la guía ya se mostró
         detenerMusica();
         mostrarToolbar();
 
@@ -284,13 +295,13 @@ if (pantallaActual==1|| pantallaActual==6) {
 
     }
 
-    private void ocultarToolbar() {
+    public void ocultarToolbar() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide(); // Ocultar el Toolbar
         }
     }
 
-    private void mostrarToolbar() {
+    public void mostrarToolbar() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().show(); // Mostrar el Toolbar
         }

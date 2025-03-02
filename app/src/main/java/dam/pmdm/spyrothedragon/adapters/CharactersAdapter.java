@@ -67,9 +67,13 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
         int centerX = (imageView.getLeft() + imageView.getRight()) / 2;
         int centerY = (imageView.getTop() + imageView.getBottom()) / 2;
 
+        // Desplazar el punto de inicio hacia abajo
+        int offsetY = (int) (imageView.getHeight() * 0.5);
+        int startY = centerY + offsetY;
+
         // Establecer la posición inicial de la vista de animación en el centro de la imagen
         animationView.setPivotX(centerX);
-        animationView.setPivotY(centerY);
+        animationView.setPivotY(startY);
 
         // Mostrar la vista de animación
         animationView.setVisibility(View.VISIBLE);
